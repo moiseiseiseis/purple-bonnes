@@ -1,10 +1,6 @@
-/** @type {import("next").NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { typedRoutes: true },
-  images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "picsum.photos" }
-    ],
-  },
+  typedRoutes: true, // ← ya no en experimental
+  // output: 'standalone', // opcional para Vercel/Netlify
 };
 export default nextConfig;
