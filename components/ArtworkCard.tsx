@@ -58,7 +58,8 @@ export default function ArtworkCard({
 
             {showButton && (
               <Link
-                href={`${buttonHrefBase}/${item.slug ?? ""}`}
+                href={`${buttonHrefBase}/${item.slug ?? ""}` as any}
+
                 className="btn-primary text-sm"
               >
                 Ver
