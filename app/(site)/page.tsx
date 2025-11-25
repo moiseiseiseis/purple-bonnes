@@ -35,7 +35,7 @@ export default async function HomePage() {
                             {/* CAMBIO CLAVE: Usar la etiqueta <video> en lugar de <img> */}
                             <video
                               src="/video/videito.mp4" 
-                              alt="Obra en movimiento"
+                              
                               className="w-full h-auto object-cover"
                               
                               // Atributos esenciales para que funcione como un GIF animado:
