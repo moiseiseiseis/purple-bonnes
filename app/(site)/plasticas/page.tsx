@@ -8,9 +8,9 @@ export default async function PlasticasPage() {
   const items = await getByCollection("plasticas");
 
   return (
-    <>
-      <SectionHero title="Plásticas" subtitle="Pintura, dibujo y escultura" />
+    <div className="container py-10">
+      <SectionHero title="Plásticas" subtitle="Pintura, grabado dibujo y escultura" />
       <GalleryGrid items={items} />
-    </>
+    </div>
   );
 }

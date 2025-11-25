@@ -90,3 +90,40 @@ h1, h2, h3, h4 {
 h1:hover, h2:hover {
   color: #fff; /* hover claro */
 }
+
+@keyframes grainFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  60% {
+    opacity: 0.25;
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
+/* DROP CAP */
+.dropcap::first-letter {
+  font-family: var(--font-playfair, serif);
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.9;
+  padding-right: 0.35rem;
+  padding-top: 0.15rem;
+  color: #cea8f0;
+}
+
+/* COLUMNAS EDITORIALES EN DESKTOP */
+@media (min-width: 1024px) {
+  .bio-columns {
+    column-count: 2;
+    column-gap: 3rem;
+  }
+}
+
+
+

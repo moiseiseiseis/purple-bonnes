@@ -11,3 +11,19 @@ export async function getArtworkBySlug(slug: string) {
   const s = decodeURIComponent(slug);
   return (artworks as any[]).find(a => a.slug === s);
 }
+export async function getProjects() {
+  return artworks.filter((a) => a.collection === "proyectos");
+}
+
+export async function getProjectsByCategory(category: "maquillaje" | "vestuario") {
+  const all = await getProjects();
+  return all.filter((a) => a.category === category);
+}
+
+export async function getProcessesByCategory(
+  category: "vestuarios" | "maquillaje" | "miscelanea"
+) {
+  return artworks.filter(
+    (a) => a.collection === "procesos" && a.category === category
+  );
+}

@@ -4,7 +4,7 @@ export const metadata = { title: "Contacto — Purple Bonnes" };
 
 export default function ContactoPage() {
   return (
-    <>
+    <div className="container py-10">
       <SectionHeader title="Contacto" subtitle="Consultas, prensa y adquisiciones" />
       <form className="card p-6 grid gap-4 max-w-xl">
         <div>
@@ -21,6 +21,6 @@ export default function ContactoPage() {
         </div>
         <button type="button" className="btn-primary">Enviar (próximamente)</button>
       </form>
-    </>
+    </div>
   );
 }
