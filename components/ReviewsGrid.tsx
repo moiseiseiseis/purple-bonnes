@@ -1,4 +1,4 @@
-export default function ReviewsGrid({ items }: { items: {source: string; quote: string; year?: number}[] }) {
+export default function ReviewsGrid({ items }: { items: {source: string; quote: string; year?: number | null}[] }) {
   return (
     <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((r, i) => (

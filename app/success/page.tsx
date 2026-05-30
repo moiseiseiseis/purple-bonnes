@@ -6,7 +6,7 @@ import prisma from "@/lib/prisma";
 export const metadata = { title: "Compra exitosa — Purple Bonnes" };
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2024-04-10",
+  apiVersion: "2026-01-28.clover",
 });
 
 export default async function SuccessPage({

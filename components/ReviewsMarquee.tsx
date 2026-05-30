@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function ReviewsMarquee({ items }: { items: {source: string; quote: string; year?: number}[] }) {
+export default function ReviewsMarquee({ items }: { items: {source: string; quote: string; year?: number | null}[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
 
   // Duplicamos contenido para scroll continuo
