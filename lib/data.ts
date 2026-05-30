@@ -1,29 +1,61 @@
-import artworks from "@/data/artworks.json";
-import collections from "@/data/collections.json";
-import pages from "@/data/pages.json";
+import prisma from "@/lib/prisma"
 
-export async function getArtworks() { return artworks; }
-export async function getByCollection(slug: string) { return artworks.filter(a => a.collection === slug); }
-export async function getByCategory(cat: string) { return artworks.filter(a => a.category === cat); }
-export async function getPages() { return pages; }
-export async function getCollections() { return collections; }
+export async function getArtworks() {
+  return prisma.artwork.findMany({
+    orderBy: { createdAt: "desc" },
+  })
+}
+
 export async function getArtworkBySlug(slug: string) {
-  const s = decodeURIComponent(slug);
-  return (artworks as any[]).find(a => a.slug === s);
+  return prisma.artwork.findUnique({
+    where: { slug },
+  })
 }
+
+export async function getByCollection(slug: string) {
+  return prisma.artwork.findMany({
+    where: { collection: slug },
+    orderBy: { createdAt: "desc" },
+  })
+}
+
+export async function getByCategory(category: string) {
+  return prisma.artwork.findMany({
+    where: { category },
+    orderBy: { createdAt: "desc" },
+  })
+}
+
 export async function getProjects() {
-  return artworks.filter((a) => a.collection === "proyectos");
+  return prisma.artwork.findMany({
+    where: { collection: "proyectos" },
+    orderBy: { createdAt: "desc" },
+  })
 }
 
-export async function getProjectsByCategory(category: "maquillaje" | "vestuario") {
-  const all = await getProjects();
-  return all.filter((a) => a.category === category);
+export async function getProjectsByCategory(category: string) {
+  return prisma.artwork.findMany({
+    where: {
+      collection: "proyectos",
+      category,
+    },
+    orderBy: { createdAt: "desc" },
+  })
 }
 
-export async function getProcessesByCategory(
-  category: "vestuarios" | "maquillaje" | "miscelanea"
-) {
-  return artworks.filter(
-    (a) => a.collection === "procesos" && a.category === category
-  );
+export async function getProcessesByCategory(category: string) {
+  return prisma.artwork.findMany({
+    where: {
+      collection: "procesos",
+      category,
+    },
+    orderBy: { createdAt: "desc" },
+  })
+}
+
+export async function getAvailableArtworks() {
+  return prisma.artwork.findMany({
+    where: { status: "available" },
+    orderBy: { createdAt: "desc" },
+  })
 }

@@ -47,7 +47,7 @@
     "price": 16000,
     "category": "pintura",
     "collection": "plasticas",
-    "media": ["/obra/plasticas/en_mi_tejido.JPG"],
+    "media": ["/obra/plasticas/en_mi_tejido.jpg"],
     "status": "available",
     "slug": "en-mi-tejido"
   },
@@ -114,7 +114,7 @@
     "price": 20000,
     "category": "pintura",
     "collection": "plasticas",
-    "media": ["/obra/plasticas/catarsis.JPG"],
+    "media": ["/obra/plasticas/catarsis.jpg"],
     "status": "available",
     "slug": "reflejos"
   },
@@ -127,7 +127,7 @@
   "price": 22000,
   "category": "escultura",
   "collection": "proyectos",
-  "media": ["/obra/plasticas/coatlicue.jpg"],
+  "media": ["/obra/proyectos/coatlicue.jpg"],
   "status": "inquire",
   "slug": "coatlicue"
 },
@@ -142,7 +142,7 @@
     "price": 12000,
     "category": "digital",
     "collection": "audiovisual",
-    "media": ["/obra/plasticas/CMY.jpeg"],
+    "media": ["/obra/plasticas/cmy.jpeg"],
     "status": "available",
     "slug": "cmy"
   },
@@ -155,7 +155,7 @@
     "price": 25000,
     "category": "pintura",
     "collection": "plasticas",
-    "media": ["/obra/plasticas/ARR.jpg"],
+    "media": ["/obra/plasticas/arr.jpg"],
     "status": "available",
     "slug": "arr"
   },
