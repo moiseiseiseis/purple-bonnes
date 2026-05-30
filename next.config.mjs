@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typedRoutes: true, // ← ya no en experimental
-  // output: 'standalone', // opcional para Vercel/Netlify
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+    ],
+  },
 };
+
 export default nextConfig;

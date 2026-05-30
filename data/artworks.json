@@ -77,7 +77,6 @@
     "status": "available",
     "slug": "dopamina-cosmica"
   },
-
   {
     "id": "pb-007",
     "title": "Death",
@@ -91,7 +90,6 @@
     "status": "available",
     "slug": "death"
   },
-
   {
     "id": "pb-008",
     "title": "Condena",
@@ -105,8 +103,8 @@
     "status": "available",
     "slug": "condena"
   },
-    {
-    "id": "pb-009",
+  {
+    "id": "pb-011",
     "title": "Catarsis y transmutación, de la vida a la muerte",
     "year": 2023,
     "technique": "Acrílico sobre lienzo",
@@ -116,23 +114,21 @@
     "collection": "plasticas",
     "media": ["/obra/plasticas/catarsis.jpg"],
     "status": "available",
-    "slug": "reflejos"
+    "slug": "catarsis-transmutacion"
   },
-{
-  "id": "pb-009",
-  "title": "Coatlicue",
-  "year": 2021,
-  "technique": "Mixta",
-  "dimensions": "40 × 40 cm",
-  "price": 22000,
-  "category": "escultura",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/coatlicue.jpg"],
-  "status": "inquire",
-  "slug": "coatlicue"
-},
-
-
+  {
+    "id": "pb-009",
+    "title": "Coatlicue",
+    "year": 2021,
+    "technique": "Mixta",
+    "dimensions": "40 × 40 cm",
+    "price": 22000,
+    "category": "escultura",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/coatlicue.jpg"],
+    "status": "inquire",
+    "slug": "coatlicue"
+  },
   {
     "id": "pb-010",
     "title": "CMY",
@@ -198,7 +194,6 @@
     "status": "available",
     "slug": "a-veces-quisiera-no-sentirte"
   },
-
   {
     "id": "pb-foto-reencuentro-1",
     "title": "Rəəncuentro (1)",
@@ -225,7 +220,6 @@
     "status": "for-exhibition",
     "slug": "reencuentro-2"
   },
-
   {
     "id": "pb-foto-testigo-1",
     "title": "Testigo (1)",
@@ -278,7 +272,6 @@
     "status": "for-exhibition",
     "slug": "testigo-4"
   },
-
   {
     "id": "pb-foto-ecos-1",
     "title": "Ecos",
@@ -331,218 +324,212 @@
     "status": "for-exhibition",
     "slug": "ecos-4"
   },
-
-{
-  "id": "pb-makeup-01",
-  "title": "Herida I",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": null,
-  "price": null,
-  "category": "maquillaje",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-makeup-01.jpeg"],
-  "status": "for-exhibition",
-  "slug": "maquillaje-ritual-i"
-},
-{
-  "id": "pb-makeup-02",
-  "title": "Herida II",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": null,
-  "price": null,
-  "category": "maquillaje",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-makeup-02.jpeg"],
-  "status": "for-exhibition",
-  "slug": "maquillaje-ritual-ii"
-},
-{
-  "id": "pb-makeup-03",
-  "title": "Catrina Makeup",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": null,
-  "price": null,
-  "category": "maquillaje",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-makeup-03.jpg"],
-  "status": "for-exhibition",
-  "slug": "maquillaje-ritual-ii"
-},
-{
-  "id": "pb-vestuario-01",
-  "title": "Catrina I",
-  "year": 2024,
-  "technique": "Diseño de vestuario",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuario",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-vestuario-01.jpg"],
-  "status": "for-exhibition",
-  "slug": "vestuario-fragmento-i"
-},
-{
-  "id": "pb-vestuario-02",
-  "title": "Catrina II",
-  "year": 2024,
-  "technique": "Diseño de vestuario",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuario",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-vestuario-02.jpg"],
-  "status": "for-exhibition",
-  "slug": "vestuario-fragmento-ii"
-},
-{
-  "id": "pb-vestuario-03",
-  "title": "Catrina III",
-  "year": 2024,
-  "technique": "Diseño de vestuario",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuario",
-  "collection": "proyectos",
-  "media": ["/obra/proyectos/pb-vestuario-03.jpg"],
-  "status": "for-exhibition",
-  "slug": "vestuario-fragmento-ii"
-},
-
-{
-  "id": "proc-vest-01",
-  "title": "Fragmento I",
-  "year": 2024,
-  "technique": "Registro fotográfico",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuarios",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-vest-03.jpg"],
-  "status": "process",
-  "slug": "proceso-vestuario-fitting-1"
-},
-{
-  "id": "proc-vest-02",
-  "title": "Fragmento II",
-  "year": 2024,
-  "technique": "Registro fotográfico",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuarios",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-vest-01.jpg"],
-  "status": "process",
-  "slug": "proceso-vestuario-fitting-1"
-},
-{
-  "id": "proc-vest-03",
-  "title": "Fragmento III",
-  "year": 2024,
-  "technique": "Registro fotográfico",
-  "dimensions": null,
-  "price": null,
-  "category": "vestuarios",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-vest-02.jpg"],
-  "status": "process",
-  "slug": "proceso-vestuario-fitting-1"
-},
-
-{
-  "id": "proc-makeup-01",
-  "title": "Creación de la base con yeso",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": "Registro fotográfico",
-  "price": null,
-  "category": "maquillaje",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-makeup-03.jpg"],
-  "status": "process",
-  "slug": "proceso-maquillaje-ensayo-1"
-},
-{
-  "id": "proc-makeup-02",
-  "title": "Vaciado de latex en molde",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": "Registro fotográfico",
-  "price": null,
-  "category": "maquillaje",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-makeup-02.jpg"],
-  "status": "process",
-  "slug": "proceso-maquillaje-ensayo-1"
-},
-{
-  "id": "proc-makeup-03",
-  "title": "Prostético terminado",
-  "year": 2024,
-  "technique": "Maquillaje artístico",
-  "dimensions": "Registro fotográfico",
-  "price": null,
-  "category": "maquillaje",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-makeup-01.jpg"],
-  "status": "process",
-  "slug": "proceso-maquillaje-ensayo-1"
-},
-{
-  "id": "proc-misc-01",
-  "title": "Fragmentos de taller I",
-  "year": 2023,
-  "technique": "Bocetos, notas y referencias",
-  "dimensions": "Papel Show-card",
-  "price": null,
-  "category": "miscelanea",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-misc-01.jpg"],
-  "status": "process",
-  "slug": "proceso-miscelanea-apuntes-1"
-},
-{
-  "id": "proc-misc-02",
-  "title": "Fragmentos de taller II",
-  "year": 2023,
-  "technique": "Bocetos, notas y referencias",
-  "dimensions": "MDF",
-  "price": null,
-  "category": "miscelanea",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-misc-02.jpg"],
-  "status": "process",
-  "slug": "proceso-miscelanea-apuntes-1"
-},
-{
-  "id": "proc-misc-03",
-  "title": "Fragmentos de taller III",
-  "year": 2023,
-  "technique": "Bocetos, notas y referencias",
-  "dimensions": "Blanco españa / MDF",
-  "price": null,
-  "category": "miscelanea",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-misc-03.jpg"],
-  "status": "process",
-  "slug": "proceso-miscelanea-apuntes-1"
-},
-{
-  "id": "proc-misc-04",
-  "title": "Fragmentos de taller IV",
-  "year": 2023,
-  "technique": "Bocetos, notas y referencias",
-  "dimensions": "",
-  "price": null,
-  "category": "miscelanea",
-  "collection": "procesos",
-  "media": ["/obra/procesos/proc-misc-04.jpg"],
-  "status": "process",
-  "slug": "proceso-miscelanea-apuntes-1"
-}
-
-
+  {
+    "id": "pb-makeup-01",
+    "title": "Herida I",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": null,
+    "price": null,
+    "category": "maquillaje",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-makeup-01.jpeg"],
+    "status": "for-exhibition",
+    "slug": "maquillaje-ritual-i"
+  },
+  {
+    "id": "pb-makeup-02",
+    "title": "Herida II",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": null,
+    "price": null,
+    "category": "maquillaje",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-makeup-02.jpeg"],
+    "status": "for-exhibition",
+    "slug": "maquillaje-ritual-ii"
+  },
+  {
+    "id": "pb-makeup-03",
+    "title": "Catrina Makeup",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": null,
+    "price": null,
+    "category": "maquillaje",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-makeup-03.jpg"],
+    "status": "for-exhibition",
+    "slug": "maquillaje-catrina"
+  },
+  {
+    "id": "pb-vestuario-01",
+    "title": "Catrina I",
+    "year": 2024,
+    "technique": "Diseño de vestuario",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuario",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-vestuario-01.jpg"],
+    "status": "for-exhibition",
+    "slug": "vestuario-fragmento-i"
+  },
+  {
+    "id": "pb-vestuario-02",
+    "title": "Catrina II",
+    "year": 2024,
+    "technique": "Diseño de vestuario",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuario",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-vestuario-02.jpg"],
+    "status": "for-exhibition",
+    "slug": "vestuario-fragmento-ii"
+  },
+  {
+    "id": "pb-vestuario-03",
+    "title": "Catrina III",
+    "year": 2024,
+    "technique": "Diseño de vestuario",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuario",
+    "collection": "proyectos",
+    "media": ["/obra/proyectos/pb-vestuario-03.jpg"],
+    "status": "for-exhibition",
+    "slug": "vestuario-fragmento-iii"
+  },
+  {
+    "id": "proc-vest-01",
+    "title": "Fragmento I",
+    "year": 2024,
+    "technique": "Registro fotográfico",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuarios",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-vest-01.jpg"],
+    "status": "process",
+    "slug": "proceso-vestuario-fitting-1"
+  },
+  {
+    "id": "proc-vest-02",
+    "title": "Fragmento II",
+    "year": 2024,
+    "technique": "Registro fotográfico",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuarios",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-vest-02.jpg"],
+    "status": "process",
+    "slug": "proceso-vestuario-fitting-2"
+  },
+  {
+    "id": "proc-vest-03",
+    "title": "Fragmento III",
+    "year": 2024,
+    "technique": "Registro fotográfico",
+    "dimensions": null,
+    "price": null,
+    "category": "vestuarios",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-vest-03.jpg"],
+    "status": "process",
+    "slug": "proceso-vestuario-fitting-3"
+  },
+  {
+    "id": "proc-makeup-01",
+    "title": "Creación de la base con yeso",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": "Registro fotográfico",
+    "price": null,
+    "category": "maquillaje",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-makeup-01.jpg"],
+    "status": "process",
+    "slug": "proceso-maquillaje-ensayo-1"
+  },
+  {
+    "id": "proc-makeup-02",
+    "title": "Vaciado de latex en molde",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": "Registro fotográfico",
+    "price": null,
+    "category": "maquillaje",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-makeup-02.jpg"],
+    "status": "process",
+    "slug": "proceso-maquillaje-ensayo-2"
+  },
+  {
+    "id": "proc-makeup-03",
+    "title": "Prostético terminado",
+    "year": 2024,
+    "technique": "Maquillaje artístico",
+    "dimensions": "Registro fotográfico",
+    "price": null,
+    "category": "maquillaje",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-makeup-03.jpg"],
+    "status": "process",
+    "slug": "proceso-maquillaje-ensayo-3"
+  },
+  {
+    "id": "proc-misc-01",
+    "title": "Fragmentos de taller I",
+    "year": 2023,
+    "technique": "Bocetos, notas y referencias",
+    "dimensions": "Papel Show-card",
+    "price": null,
+    "category": "miscelanea",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-misc-01.jpg"],
+    "status": "process",
+    "slug": "proceso-miscelanea-apuntes-1"
+  },
+  {
+    "id": "proc-misc-02",
+    "title": "Fragmentos de taller II",
+    "year": 2023,
+    "technique": "Bocetos, notas y referencias",
+    "dimensions": "MDF",
+    "price": null,
+    "category": "miscelanea",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-misc-02.jpg"],
+    "status": "process",
+    "slug": "proceso-miscelanea-apuntes-2"
+  },
+  {
+    "id": "proc-misc-03",
+    "title": "Fragmentos de taller III",
+    "year": 2023,
+    "technique": "Bocetos, notas y referencias",
+    "dimensions": "Blanco españa / MDF",
+    "price": null,
+    "category": "miscelanea",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-misc-03.jpg"],
+    "status": "process",
+    "slug": "proceso-miscelanea-apuntes-3"
+  },
+  {
+    "id": "proc-misc-04",
+    "title": "Fragmentos de taller IV",
+    "year": 2023,
+    "technique": "Bocetos, notas y referencias",
+    "dimensions": "",
+    "price": null,
+    "category": "miscelanea",
+    "collection": "procesos",
+    "media": ["/obra/procesos/proc-misc-04.jpg"],
+    "status": "process",
+    "slug": "proceso-miscelanea-apuntes-4"
+  }
 ]
-

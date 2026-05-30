@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db_tienda:
+    image: postgres:16-alpine
+    container_name: prpl_bnns_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: prpl-bnns
+      POSTGRES_DB: prpl_bnns_db
+    ports:
+      - "5433:5432" 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

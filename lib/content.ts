@@ -1,20 +1,24 @@
-import fs from "node:fs";
-import path from "node:path";
+import prisma from "@/lib/prisma";
 
-export async function getSemblanza(): Promise<string> {
-  const file = path.join(process.cwd(), "data", "semblanza.md");
+export async function getReviews() {
   try {
-    return fs.readFileSync(file, "utf8");
-  } catch {
-    return "Semblanza próximamente.";
+    return await prisma.review.findMany({
+      orderBy: { year: "desc" }, // O 'createdAt' si prefieres
+    });
+  } catch (error) {
+    console.error("Error cargando reviews:", error);
+    return [];
   }
 }
 
-export async function getReviews(): Promise<{source: string; quote: string; year?: number}[]> {
+export async function getSemblanza() {
   try {
-    const data = fs.readFileSync(path.join(process.cwd(), "data", "reviews.json"), "utf8");
-    return JSON.parse(data);
-  } catch {
-    return [];
+    const page = await prisma.page.findUnique({
+      where: { slug: "semblanza" },
+    });
+    return page?.content ?? "Semblanza próximamente.";
+  } catch (error) {
+    console.error("Error cargando semblanza:", error);
+    return "Semblanza próximamente.";
   }
 }
