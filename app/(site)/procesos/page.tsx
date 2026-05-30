@@ -2,6 +2,8 @@ import SectionHeader from "@/components/SectionHeader";
 import GalleryGrid from "@/components/GalleryGrid";
 import { getProcessesByCategory } from "@/lib/data";
 
+export const revalidate = 60;
+
 export const metadata = {
   title: "Procesos — Purple Bonnes",
   description:

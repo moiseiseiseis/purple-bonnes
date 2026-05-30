@@ -3,6 +3,7 @@ import GalleryGrid from "@/components/GalleryGrid";
 import { getByCollection } from "@/lib/data";
 
 export const metadata = { title: "Plásticas — Purple Bonnes" };
+export const revalidate = 60;
 
 export default async function PlasticasPage() {
   const items = await getByCollection("plasticas");

@@ -2,6 +2,7 @@ import { getByCollection } from "@/lib/data";
 import AudiovisualCollections from "@/components/AudiovisualCollections";
 
 export const metadata = { title: "Audiovisual — Purple Bonnes" };
+export const revalidate = 60;
 
 // Etiquetas bonitas para cada categoría de la colección audiovisual
 const COLECCIONES: Record<string, string> = {

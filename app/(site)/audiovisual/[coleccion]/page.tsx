@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { getByCollection } from "@/lib/data";
 import GalleryGrid from "@/components/GalleryGrid";
 
+export const revalidate = 60;
+
 const COLLECTION_CONFIG: Record<
   string,
   {

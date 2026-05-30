@@ -1,6 +1,19 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import prisma from "@/lib/prisma";
 import { normalizeArtworkInput } from "@/lib/schemas";
+
+function revalidateGalleries(slug?: string) {
+  revalidatePath("/");
+  revalidatePath("/plasticas");
+  revalidatePath("/tienda");
+  revalidatePath("/audiovisual");
+  revalidatePath("/audiovisual/[coleccion]", "page");
+  revalidatePath("/procesos");
+  revalidatePath("/proyectos");
+  revalidatePath("/obra/[slug]", "page");
+  if (slug) revalidatePath(`/obra/${slug}`);
+}
 
 export async function GET(
   _request: Request,
@@ -39,6 +52,7 @@ export async function PUT(
     }
 
     const updated = await prisma.artwork.update({ where: { id }, data });
+    revalidateGalleries(updated.slug);
     return NextResponse.json(updated);
   } catch (error: any) {
     console.error("PUT /admin/artworks/[id]:", error);
@@ -58,7 +72,12 @@ export async function DELETE(
 ) {
   const { id } = await params;
   try {
+    const artwork = await prisma.artwork.findUnique({ where: { id }, select: { slug: true } });
+    if (!artwork) {
+      return NextResponse.json({ error: "Obra no encontrada" }, { status: 404 });
+    }
     await prisma.artwork.delete({ where: { id } });
+    revalidateGalleries(artwork.slug);
     return NextResponse.json({ message: "Obra eliminada" });
   } catch (error) {
     console.error("DELETE /admin/artworks/[id]:", error);

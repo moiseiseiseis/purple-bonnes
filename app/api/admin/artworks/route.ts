@@ -23,7 +23,13 @@ export async function POST(req: Request) {
     const artwork = await prisma.artwork.create({ data });
 
     revalidatePath("/");
+    revalidatePath("/plasticas");
     revalidatePath("/tienda");
+    revalidatePath("/audiovisual");
+    revalidatePath("/audiovisual/[coleccion]", "page");
+    revalidatePath("/procesos");
+    revalidatePath("/proyectos");
+    revalidatePath("/obra/[slug]", "page");
     revalidatePath(`/obra/${artwork.slug}`);
 
     return NextResponse.json(artwork, { status: 201 });
