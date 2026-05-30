@@ -6,26 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "prisma db push",
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.1",
+    "@prisma/client": "^7.1.0",
+    "@stripe/stripe-js": "^8.8.0",
+    "class-variance-authority": "^0.7.1",
+    "cloudinary": "^2.9.0",
+    "lucide-react": "^0.553.0",
     "next": "latest",
+    "pg": "^8.18.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "lucide-react": "^0.553.0",
-    "class-variance-authority": "^0.7.1",
-    "next-seo": "^7.0.1"
+    "stripe": "^20.3.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.17",
     "@tailwindcss/postcss": "^4.1.17",
-    "postcss": "^8.5.6",
-    "eslint": "^9",
-    "eslint-config-next": "latest",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "latest",
+    "postcss": "^8.5.6",
+    "prisma": "^7.1.0",
+    "tailwindcss": "^4.1.17",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   },
-  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531"
+  "packageManager": "pnpm@9.15.9"
 }
