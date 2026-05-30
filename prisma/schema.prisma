@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Artwork {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  year        Int?
+  technique   String?
+  dimensions  String?
+  price       Int?
+  category    String
+  collection  String
+  status      String
+
+  media       String[]
+  about       String?
+
+  isFeaturedHome       Boolean @default(false)
+  isFeaturedCollection Boolean @default(false)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  source    String
+  quote     String
+  year      Int?
+  createdAt DateTime @default(now())
+}
+
+model Page {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model Order {
+  id              String   @id @default(cuid())
+  stripeSessionId String   @unique
+  stripePaymentId String?
+  productType     String
+  productId       String
+  amount          Int
+  currency        String
+  customerEmail   String?
+  customerName    String?
+  phone           String?
+  shippingAddress Json?
+  createdAt       DateTime @default(now())
+}
