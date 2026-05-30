@@ -85,16 +85,25 @@ export default async function ArtworkPage(
 
           <div className="mt-4 pt-4 border-t border-white/10">
             {status === "available" && price ? (
-              <BuyButton artworkId={art.id} />
+              <>
+                <BuyButton artworkId={art.id} />
+                <p className="mt-3 text-xs text-pb-lavender/60 text-center leading-relaxed">
+                  La compra se completa de forma segura mediante Stripe.
+                </p>
+              </>
             ) : (
-              <p className="text-sm text-pb-lavender/60 text-center">
-                Esta obra no está disponible para compra directa.
-              </p>
+              <div className="space-y-3">
+                <p className="text-sm text-pb-lavender/60 text-center">
+                  {STATUS_LABELS[status] ?? status}
+                </p>
+                <Link
+                  href={`/contacto?titulo=${encodeURIComponent(title)}`}
+                  className="btn-primary w-full block text-center"
+                >
+                  Consultar sobre esta obra
+                </Link>
+              </div>
             )}
-
-            <p className="mt-3 text-xs text-pb-lavender/60 text-center leading-relaxed">
-              La compra se completa de forma segura mediante Stripe.
-            </p>
           </div>
         </div>
       </div>
